@@ -69,3 +69,27 @@ function getBrowseData() {
     return null;
   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".btn");
+  const sections = {
+    "barbell-btn": "barbell-curl",
+    "incline-btn": "incline",
+    "tricep-btn": "tricep",
+    "shoulder-btn": "shoulder",
+    "squat-btn": "squats",
+  };
+
+  function showSection(id) {
+    Object.values(sections).forEach((sectionId) => {
+      const el = document.getElementById(sectionId);
+      if (el) el.style.display = "none";
+    });
+
+    const targetEl = document.getElementById(id);
+    if (targetEl) {
+      targetEl.style.display = "block";
+      localStorage.setItem("activeSection", id); // Save to localStorage
+    }
+  }
+});
