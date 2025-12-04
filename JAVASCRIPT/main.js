@@ -87,3 +87,8 @@ function updateBMI() {
     bmiStatus.style.color = "red";
   }
 }
+
+weighRange.addEventListener("input", updateBMI);
+heightRange.addEventListener("input", updateBMI);
+
+updateBMI();
