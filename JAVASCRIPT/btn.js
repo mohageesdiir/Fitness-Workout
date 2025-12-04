@@ -30,3 +30,21 @@ formBrowse.addEventListener("change", async () => {
     console.error(error);
   }
 });
+
+// Populate select options
+const muscles = [
+  "biceps",
+  "chest",
+  "back",
+  "shoulders",
+  "legs",
+  "abs",
+  "triceps",
+];
+
+muscles.forEach((muscle) => {
+  const option = document.createElement("option");
+  option.value = muscle;
+  option.textContent = muscle.charAt(0).toUpperCase() + muscle.slice(1);
+  muscleSelect.appendChild(option);
+});
