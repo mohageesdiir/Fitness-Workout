@@ -191,3 +191,492 @@ nav a.active {
   font-size: 1.5rem;
   color: green;
 }
+
+.browse-exercise {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+}
+
+.target-days {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.target-muscle,
+.days-training {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.target-muscle span,
+.days-training span {
+  font-size: 1.5rem;
+}
+
+.targets select {
+  border: none;
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: rgba(51, 51, 51, 0.2);
+  border-radius: 10px;
+}
+
+#targets select {
+  border: none;
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: rgba(51, 51, 51, 0.2);
+  border-radius: 10px;
+}
+
+.traning-types {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.traning-types h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.traning-types img {
+  width: 30px;
+  height: 25px;
+}
+
+.display img {
+  width: 30px;
+  height: 25px;
+}
+.trainging-one,
+.display {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.training-info {
+  flex: 1;
+}
+
+.training-info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.training-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.weekly {
+  display: flex;
+  gap: 2rem;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* halka ay shaqadu kabilaami */
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(226, 63, 3, 0.8);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgba(255, 166, 0, 0.7);
+  font-style: italic;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1);
+}
+.container-boxs {
+  width: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.08);
+  /* margin: 4rem auto; */
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.slide {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 6px 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.slide h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 0;
+}
+
+.slide p {
+  font-size: 0.95rem;
+  text-align: justify;
+  color: #333;
+  padding: 5px 0;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 12px;
+}
+
+.btns button {
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background: #f4f4f4;
+}
+
+.btns button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#incline,
+#barbell-curl,
+#tricep,
+#shoulder,
+#squats {
+  display: none;
+}
+
+/* meesha ay ku dhamaani  */
+
+/* calendar  */
+
+.calendar {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
+}
+
+.header-calendar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.BTN {
+  cursor: pointer;
+}
+
+#month-year {
+  font-weight: bold;
+  font-size: 1.2rem;
+  /* display: none; */
+}
+
+.weekdays,
+.days-weeks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.days-weeks {
+  height: 450px;
+}
+
+.weekdays div,
+.days-weeks div {
+  width: 14%;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+}
+
+.days-weeks div {
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.5rem;
+}
+
+.days-weeks div:hover {
+  background-color: rgb(146, 142, 142);
+  color: orangered;
+}
+
+.days-weeks .today {
+  background-color: orangered;
+  color: white;
+}
+
+/* start-workout */
+
+#start-workout {
+  display: none;
+  flex-direction: column;
+}
+
+.workout-time {
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  height: 700px;
+  padding: 2.5rem 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1);
+  margin: 0% auto;
+  gap: 3rem;
+}
+
+.day-workout {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 1100px;
+  padding: 2.5rem 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.1);
+  margin: 2% auto;
+  gap: 3rem;
+}
+
+.day-workout span {
+  font-size: 1.75rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.time-raning {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  gap: 2rem;
+}
+
+.time-raning h1 {
+  /* font-size: 3rem; */
+  font-weight: 800;
+  background: linear-gradient(
+    90deg,
+    #ff3b3b 0%,
+    #e24a2b 35%,
+    #b74b26 65%,
+    #8b3f1d 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.time-raning em {
+  font-weight: 800;
+  background: linear-gradient(
+    90deg,
+    #2ecc71 0%,
+    #22c38e 40%,
+    #17b5a4 70%,
+    #00a7b3 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.choose-type {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 1rem; */
+}
+
+.choose-type span:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: rgba(85, 85, 85, 0.2);
+  padding: 10px 1rem;
+  border-radius: 10px;
+}
+.choose-type span:nth-child(2) {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  /* background-color: rgba(85, 85, 85, 0.2); */
+  padding: 10px 1rem;
+  /* border-radius: 10px; */
+}
+.choose-type span:nth-child(3) {
+  font-size: 1.25rem;
+  text-transform: capitalize;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.time span {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  /* background-color: rgba(85, 85, 85, 0.2); */
+  padding: 10px 1rem;
+}
+
+.progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.progress {
+  background-color: #1db954;
+  width: 0%;
+  height: 100%;
+  transition: width 0.1s linear;
+}
+
+#start-sec {
+  display: none;
+}
+
+.start-time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.start-time button:nth-child(1) {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: #e24a2b;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.start-time button:nth-child(2) {
+  background-color: #f0ad4e;
+  color: white;
+  border: none;
+  padding: 1rem;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.start-time button:nth-child(3) {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  background-color: rgba(85, 85, 85, 0.2);
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* @media screen  */
+
+@media (max-width: 850px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  .BMI-browse {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .weekly {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .day-workout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .workout-time {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #start-workout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+  }
+}
