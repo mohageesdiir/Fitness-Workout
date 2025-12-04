@@ -32,3 +32,13 @@ function loadWorkout() {
     sectionWorkout.style.display = "none";
   }
 }
+
+workoutPlanner.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("workout Planner");
+  workoutPlanner.classList.add("active");
+  startWorkout.classList.remove("active");
+  sectionWorkout.style.display = "flex";
+  sectionStart.style.display = "none";
+  saveLocalStorageDate();
+});
