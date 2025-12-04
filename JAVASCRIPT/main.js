@@ -42,3 +42,13 @@ workoutPlanner.addEventListener("click", (e) => {
   sectionStart.style.display = "none";
   saveLocalStorageDate();
 });
+
+startWorkout.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log("start Workout");
+  startWorkout.classList.add("active");
+  workoutPlanner.classList.remove("active");
+  sectionStart.style.display = "flex";
+  sectionWorkout.style.display = "none";
+  saveLocalStorageDate();
+});
