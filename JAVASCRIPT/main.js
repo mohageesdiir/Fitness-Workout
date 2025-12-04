@@ -92,3 +92,12 @@ weighRange.addEventListener("input", updateBMI);
 heightRange.addEventListener("input", updateBMI);
 
 updateBMI();
+
+// localStorage section
+function saveLocalStorageDate() {
+  const activeTab = workoutPlanner.classList.contains("active")
+    ? "planner"
+    : "start";
+
+  localStorage.setItem("activeTab", activeTab);
+}
