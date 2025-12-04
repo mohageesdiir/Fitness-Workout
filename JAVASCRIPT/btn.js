@@ -106,3 +106,39 @@ document.addEventListener("DOMContentLoaded", () => {
     showSection(savedSection);
   }
 });
+
+// Setup all carousels on the page
+function setupCarousel(carouselId, leftBtnId, rightBtnId) {
+  const carousel = document.querySelector(carouselId);
+  const slides = carousel.querySelectorAll(".slide");
+
+  const btnLeft = document.querySelector(leftBtnId);
+  const btnRight = document.querySelector(rightBtnId);
+
+  let index = 0;
+
+  // Move carousel
+  function update() {
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+
+    btnLeft.disabled = index === 0;
+    btnRight.disabled = index === slides.length - 1;
+  }
+
+  // Buttons
+  btnLeft.addEventListener("click", () => {
+    if (index > 0) {
+      index--;
+      update();
+    }
+  });
+
+  btnRight.addEventListener("click", () => {
+    if (index < slides.length - 1) {
+      index++;
+      update();
+    }
+  });
+
+  update(); // initial
+}
