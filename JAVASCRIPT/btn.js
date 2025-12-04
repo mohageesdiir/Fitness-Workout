@@ -92,4 +92,17 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("activeSection", id); // Save to localStorage
     }
   }
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const targetId = sections[btn.id];
+      showSection(targetId);
+    });
+  });
+
+  // Load saved section on page reload
+  const savedSection = localStorage.getItem("activeSection");
+  if (savedSection) {
+    showSection(savedSection);
+  }
 });
