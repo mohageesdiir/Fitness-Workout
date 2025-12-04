@@ -48,3 +48,17 @@ muscles.forEach((muscle) => {
   option.textContent = muscle.charAt(0).toUpperCase() + muscle.slice(1);
   muscleSelect.appendChild(option);
 });
+
+// Save to localStorage (store an object)
+function saveBrowseData(obj) {
+  localStorage.setItem("all-target", JSON.stringify(obj));
+}
+
+// Get from localStorage (returns object or null)
+function getBrowseData() {
+  try {
+    return JSON.parse(localStorage.getItem("all-target"));
+  } catch {
+    return null;
+  }
+}
