@@ -61,3 +61,15 @@ const weightValue = document.querySelector("#weight-value");
 const heightValue = document.querySelector("#height-value");
 const bmiValue = document.querySelector("#bmi-value");
 const bmiStatus = document.querySelector("#bmi-status");
+
+function updateBMI() {
+  const weight = parseInt(weighRange.value);
+  const height = parseInt(heightRange.value);
+
+  weightValue.textContent = `${weight}kg`;
+  heightValue.textContent = `${height}cm`;
+
+  const heightInMeters = height / 100;
+  const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
+  bmiValue.textContent = bmi;
+}
