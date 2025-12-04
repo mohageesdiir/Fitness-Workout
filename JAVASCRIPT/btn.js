@@ -142,3 +142,11 @@ function setupCarousel(carouselId, leftBtnId, rightBtnId) {
 
   update(); // initial
 }
+
+//  Call the function for each workout section
+setupCarousel("#carousel-barbell", "#btn-left", "#btn-right");
+setupCarousel("#carousel-incline", "#btn-left", "#btn-right");
+// Add upcoming
+setupCarousel("#carousel-tricep", "#btn-left", "#btn-right");
+setupCarousel("#carousel-shoulder", "#btn-left", "#btn-right");
+setupCarousel("#carousel-squat", "#btn-left", "#btn-right");
