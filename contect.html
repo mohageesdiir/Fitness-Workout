@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contect.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="info">
+            <img src="weight-gym-svgrepo-com.svg" alt="logo">
+            <div class="title">
+                <h1>Fitness Workout Planner</h1>
+                <p>Track your BMI and plan your weekly workouts</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contect.html">Contact Us </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="contect-us" class="contect">
+        <div class="name-email">
+            <input id="name" type="text" name="name" required placeholder="enter your name ">
+            <input id="email" type="email" name="email" required placeholder="enter your email">
+        </div>
+        <textarea name="" id="text" placeholder="what is your issues "></textarea>
+
+        <button type="submit" id="send">submit</button>
+    </div>
+
+
+    <script>
+        const contactInfo = document.querySelector("#contect-us");
+        const nameInput = document.querySelector("#name");
+        const emailInput = document.querySelector("#email");
+        const sendBtn = document.querySelector("#send");
+
+        sendBtn.addEventListener("click", () => {
+
+            const nameValue = nameInput.value.trim();
+
+            if (nameValue === "") {
+                alert("Please enter your name before submitting.");
+                return;
+            }
+
+            const emailValue = emailInput.value.trim();
+
+            if (emailInput === "") {
+                alert("Please enter your email before submitting.")
+                return;
+            }
+
+            alert("Your email was submitted successfully!");
+        });
+    </script>
+
+
+</body>
+
+</html>
